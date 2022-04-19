@@ -1,14 +1,14 @@
-# Actor - Deep Web Scraper
+# Actor - Dark Web Scraper
 
-## Deep Web scraper
+## Dark Web scraper
 
-This actor allows you to scrape Deep Web sites. Within the OSINT support, you can use this actor to find sensitive information.
+This actor allows you to scrape Dark Web sites. Within the OSINT support, you can use this actor to find sensitive information.
 
-The Deep Web data scraper supports the following features:
+The Dark Web data scraper supports the following features:
 
 -   Search any keyword - You can search any keyword you would like to have and get the results.
 
--   Scrape sensitive information - Scrape any sensitive information like emails, phones, API Keys or crypto wallets from Deep Web.
+-   Scrape sensitive information - Scrape any sensitive information like emails, phones, API Keys or crypto wallets from Dark Web.
 
 -   Scrape TOR - Since the actor supports TOR proxy, you can scrape any information up to your needs.
 
@@ -16,17 +16,17 @@ The Deep Web data scraper supports the following features:
 
 ## Bugs, fixes, updates and changelog
 
-This scraper is under active development. If you have any feature requests you can create an issue from [here](https://github.com/tugkan/deepweb-scraper/issues).
+This scraper is under active development. If you have any feature requests you can create an issue from [here](https://github.com/tugkan/darkweb-scraper/issues).
 
 ## Input Parameters
 
-The input of this scraper should be JSON containing the list of pages on Deep Web that should be visited. Required fields are:
+The input of this scraper should be JSON containing the list of pages on Dark Web that should be visited. Required fields are:
 
 | Field                | Type    | Description                                                                                                                                                                                                    |
 | -------------------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| search               | String  | (optional) Keyword that you want to search on Deep Web.                                                                                                                                                       |
-| startUrls            | Array   | (optional) List of Deep Web URLs.                                                                                                                  |
-| maxDepth              | Integer | (optional) Maximum depth the scraper will dive into. If you want to scrape a Deep Web site in a very superficial way, you can set this with a low number.                                                          |
+| search               | String  | (optional) Keyword that you want to search on Dark Web.                                                                                                                                                       |
+| startUrls            | Array   | (optional) List of Dark Web URLs.                                                                                                                  |
+| maxDepth              | Integer | (optional) Maximum depth the scraper will dive into. If you want to scrape a Dark Web site in a very superficial way, you can set this with a low number.                                                          |
 | maxPages             | Integer | (optional) You can limit scraped pages. This should be useful when you search through the big websites.                                                                                                |
 | extendOutputFunction | String  | (optional) Function that takes a JQuery handle ($) as argument and returns object with data                                                                                                                    |
 
@@ -41,14 +41,14 @@ If you would like to scrape the website quickly without diving into its deeper p
 
 The actor optimized to run blazing fast and scrape many as pages as possible. If actor doesn't block very often it'll scrape 100 pages in 5 seconds with ~0.1-0.2 compute units.
 
-### Deep Web Scraper Input example
+### Dark Web Scraper Input example
 
 ```json
 {
   "startUrls":[
     "http://xjfbpuj56rdazx4iolylxplbvyft2onuerjeimlcqwaihp3s6r4xebqd.onion/"
   ],
-  "search": "deep web",
+  "search": "Dark Web",
   "maxDepth": 5,
   "maxPages": 10,
 }
@@ -61,15 +61,15 @@ When items are loaded from the page, you should see a message about this event w
 
 If you provide incorrect input to the actor, it will immediately stop with failure state and output an explanation of what is wrong.
 
-## Deep Web Export
+## Dark Web Export
 
 During the run, the actor stores results into a dataset. Each item is a separate item in the dataset.
 
-You can manage the results in any languague (Python, PHP, Node JS/NPM). See the FAQ or <a href="https://www.apify.com/docs/api" target="blank">our API reference</a> to learn more about getting results from this Deep Web actor.
+You can manage the results in any languague (Python, PHP, Node JS/NPM). See the FAQ or <a href="https://www.apify.com/docs/api" target="blank">our API reference</a> to learn more about getting results from this Dark Web actor.
 
 ## Scraped Properties
 
-The structure of each item in Deep Web Scaper looks like this:
+The structure of each item in Dark Web Scaper looks like this:
 
 ### Item Detail
 
