@@ -20,17 +20,22 @@ This scraper is under active development. If you have any feature requests you c
 
 ## Input Parameters
 
-The input of this scraper should be JSON containing the list of pages on Dark Web that should be visited. Required fields are:
+The input of this scraper should be JSON containing the list of pages on Dark Web that should be visited. Possible fields are:
 
-| Field                | Type    | Description                                                                                                                                                                                                    |
-| -------------------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| search               | String  | (optional) Keyword that you want to search on Dark Web.                                                                                                                                                       |
-| startUrls            | Array   | (optional) List of Dark Web URLs.                                                                                                                  |
-| maxDepth              | Integer | (optional) Maximum depth the scraper will dive into. If you want to scrape a Dark Web site in a very superficial way, you can set this with a low number.                                                          |
-| maxPages             | Integer | (optional) You can limit scraped pages. This should be useful when you search through the big websites.                                                                                                |
-| extendOutputFunction | String  | (optional) Function that takes a JQuery handle ($) as argument and returns object with data                                                                                                                    |
+- `search`: (Optional) (String) Keyword that you want to search on Dark Web
 
-##### Tip
+- `startUrls`: (Optional) (Array) List of Dark Web URLs.
+
+- `maxDepth`: (Optional) (Number) Maximum depth the scraper will dive into. If you want to scrape a Dark Web site in a very superficial way, you can set this with a low number.
+
+- `maxPages`: (Optional) (Number) You can limit scraped pages. This should be useful when you search through the big websites.
+
+- `maxItems`: (Optional) (Number) You can limit scraped items. This should be useful when you search through the big lists or search results.
+
+- `extendOutputFunction`: (Optional) (String) Function that takes a JQuery handle ($) as argument and returns object with data.
+
+
+### Tip
 
 When you want to have a scrape over a specific URL, just copy and paste the link as one of the **startUrl**.
 
