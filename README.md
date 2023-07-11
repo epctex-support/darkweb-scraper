@@ -1,6 +1,8 @@
+[https://apify.com/epctex/darkweb-scraper](https://apify.com/epctex/darkweb-scraper?fpr=yhdrb)
+
 # Actor - Dark Web Scraper
 
-## Dark Web scraper
+## Dark Web Scraper
 
 This actor allows you to scrape Dark Web sites. Within the OSINT support, you can use this actor to find sensitive information.
 
@@ -8,19 +10,19 @@ The Dark Web data scraper supports the following features:
 
 -   Search any keyword - You can search any keyword you would like to have and get the results.
 
--   Scrape sensitive information - Scrape any sensitive information like emails, phones, API Keys or crypto wallets from Dark Web.
+-   Scrape sensitive information - Scrape any sensitive information like emails, phones, API Keys, or crypto wallets from Dark Web.
 
 -   Scrape TOR - Since the actor supports TOR proxy, you can scrape any information up to your needs.
 
--   Customizable - If you are looking for a specific data, you can develop your own function and integrate into the scraper.
+-   Customizable - If you are looking for specific data, you can develop your function and integrate it into the scraper.
 
-## Bugs, fixes, updates and changelog
+## Bugs, fixes, updates, and changelog
 
 This scraper is under active development. If you have any feature requests you can create an issue from [here](https://github.com/epctex/darkweb-scraper/issues).
 
 ## Input Parameters
 
-The input of this scraper should be JSON containing the list of pages on Dark Web that should be visited. Possible fields are:
+The input of this scraper should be JSON containing the list of pages on the Dark Web that should be visited. Possible fields are:
 
 - `search`: (Optional) (String) Keyword that you want to search on Dark Web
 
@@ -32,19 +34,19 @@ The input of this scraper should be JSON containing the list of pages on Dark We
 
 - `maxItems`: (Optional) (Number) You can limit scraped items. This should be useful when you search through the big lists or search results.
 
-- `extendOutputFunction`: (Optional) (String) Function that takes a JQuery handle ($) as argument and returns object with data.
+- `extendOutputFunction`: (Optional) (String) Function that takes a JQuery handle ($) as an argument and returns an object with data.
 
 
 ### Tip
 
-When you want to have a scrape over a specific URL, just copy and paste the link as one of the **startUrl**.
+When you want to scrape over a specific URL, just copy and paste the link as one of the **startUrl**.
 
 If you would like to scrape the website quickly without diving into its deeper pages, you can set `maxDepth` option within a lower number.
 
 
 ### Compute Unit Consumption
 
-The actor optimized to run blazing fast and scrape many as pages as possible. If actor doesn't block very often it'll scrape 100 pages in 5 seconds with ~0.1-0.2 compute units.
+The actor is optimized to run blazing fast and scrape many as pages as possible. If the actor doesn't block very often it'll scrape 100 pages in 5 seconds with ~0.1-0.2 compute units.
 
 ### Dark Web Scraper Input example
 
@@ -64,13 +66,13 @@ The actor optimized to run blazing fast and scrape many as pages as possible. If
 During the run, the actor will output messages letting you know what is going on. Each message always contains a short label specifying which page from the provided list is currently specified.
 When items are loaded from the page, you should see a message about this event with a loaded item count and total item count for each page.
 
-If you provide incorrect input to the actor, it will immediately stop with failure state and output an explanation of what is wrong.
+If you provide incorrect input to the actor, it will immediately stop with a failure state and output an explanation of what is wrong.
 
 ## Dark Web Export
 
 During the run, the actor stores results into a dataset. Each item is a separate item in the dataset.
 
-You can manage the results in any languague (Python, PHP, Node JS/NPM). See the FAQ or <a href="https://www.apify.com/docs/api" target="blank">our API reference</a> to learn more about getting results from this Dark Web actor.
+You can manage the results in any language (Python, PHP, Node JS/NPM). See the FAQ or <a href="https://www.apify.com/docs/api" target="blank">our API reference</a> to learn more about getting results from this Dark Web actor.
 
 ## Scraped Properties
 
@@ -174,4 +176,4 @@ The structure of each item in Dark Web Scaper looks like this:
 ```
 
 ## Contact
-Please visit us through [epctex.com](https://epctex.com) to see all the products that is available for you. If you are looking for any custom integration or so, please reach out to us through the chat box in [epctex.com](https://epctex.com). In need of support? [devops@epctex.com](mailto:devops@epctex.com) is at your service.
+Please visit us through [epctex.com](https://epctex.com) to see all the products that are available for you. If you are looking for any custom integration or so, please reach out to us through the chat box in [epctex.com](https://epctex.com). In need of support? [devops@epctex.com](mailto:devops@epctex.com) is at your service.
